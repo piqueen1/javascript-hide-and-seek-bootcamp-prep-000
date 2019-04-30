@@ -7,5 +7,11 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  querySelectorAll('.ranked-list')
+  //pull out values of every child within class .ranked-list
+  var ranks = document.querySelectorAll('.ranked-list');
+  
+  //loop over each value and change it
+  for (var i=0; i<ranks.length; i++) {
+    ranks[i].innerHTML = parseInt(n) + 1;
+  }
 }
