@@ -21,5 +21,7 @@ function deepestChild() {
   var nodes = document.querySelectorAll('#grand-node div');
   
   //find deepest child node
-  var findDeepest = nodes[nodes.length - 1];
+  var deepest = nodes[nodes.length - 1];
+  
+  return deepest;
 }
