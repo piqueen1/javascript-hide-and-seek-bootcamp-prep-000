@@ -18,9 +18,9 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   //pull out all children nodes in ID = grand-node
-  var nodes = document.querySelectorAll('div #grand-node');
+  var nodes = document.querySelectorAll('#grand-node div');
   
-  //loop through and find deepest child nodes
+  //find deepest child node
   for (var i=0; i<nodes.length; i++) {
     if 
   }
