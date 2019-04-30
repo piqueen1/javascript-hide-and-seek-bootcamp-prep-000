@@ -15,3 +15,13 @@ function increaseRankBy(n) {
     ranks[i].innerHTML = parseInt(n) + 1;
   }
 }
+
+function deepestChild() {
+  //pull out all children nodes in ID = grand-node
+  var nodes = document.querySelectorAll('#grand-node div');
+  
+  //find deepest child node
+  var deepest = nodes[nodes.length - 1];
+  
+  return deepest;
+}
